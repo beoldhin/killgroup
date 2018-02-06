@@ -28,3 +28,9 @@ Problem 3:
 
 This problem is the one "fixed" by the *killgroup* script. The *killgroup* script kills processes as trees and waits, unlike *systemd*. It is possible that *systemd* needs some added functionality to accomplish the same.
 
+## Installation
+
+Copy the *killgroup* script to some accessible directory, i.e. /usr/local/bin or similar. Then run this script as "killgroup google-chrome", "killgroup chromium" or similar: the name should match the name in the process tree (listed in *ps a* output).
+
+The next step is to call the *killgroup* script from an alias, Gnome script or similar. An example of such a Gnome script is given [here](https://unix.stackexchange.com/questions/49333/how-can-i-run-a-script-during-gnome-logout-if-i-dont-have-admin-privileges).
+
